@@ -1,8 +1,13 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
+import { GoogleAnalytics } from '@next/third-parties/google'
+import Script from 'next/script'
 import './globals.css'
-import { base_url, siteMetadata } from '../../utils'
+
+import Layout from '@/components/Layout'
+
 import { pages } from './sitemap'
+import { base_url, ga_id, siteMetadata } from '../utils'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -86,7 +91,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <Layout>{children}</Layout>
+      </body>
+      <Script
+        id="company-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd),
+        }}
+      />
+      <GoogleAnalytics gaId={ga_id as string} />
     </html>
   )
 }

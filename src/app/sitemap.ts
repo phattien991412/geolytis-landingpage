@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next'
-import { siteMetadata } from '../../utils'
+
+import { siteMetadata } from '../utils'
 
 export const pages = ['']
 
