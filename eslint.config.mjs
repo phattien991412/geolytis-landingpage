@@ -12,7 +12,7 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.config({
-    extends: ['next/core-web-vitals', 'next/typescript', 'plugin:prettier/recommended', 'plugin:import/recommended'],
+    extends: ['next/core-web-vitals', 'next/typescript', 'prettier'],
     plugins: ['@typescript-eslint', 'react-hooks', 'import', 'prettier'],
     rules: {
       'react/react-in-jsx-scope': 'off',
