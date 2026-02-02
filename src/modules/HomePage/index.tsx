@@ -1,4 +1,5 @@
-import React from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
 
 const HomePage = () => {
   return (
@@ -13,50 +14,50 @@ const HomePage = () => {
               <div className="flex items-center justify-between">
                 <div className="flex items-center">
                   <div className="flex items-center">
-                    <a href="/" className="flex items-center">
-                      <img
+                    <Link href="/" className="flex items-center">
+                      <Image
                         src="https://spyderbot.net/build/assets/logo-text-GE4uLQKL.png"
                         alt="SpyderBot"
                         className="h-5"
                         style={{ filter: 'brightness(0) invert(1)' }}
                       />
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="hidden items-center gap-8 md:flex">
-                  <a href="/features" className="text-gray-300 transition-colors hover:text-purple-400">
+                  <Link href="/features" className="text-gray-300 transition-colors hover:text-purple-400">
                     Features
-                  </a>
-                  <a href="/pricing" className="text-gray-300 transition-colors hover:text-purple-400">
+                  </Link>
+                  <Link href="/pricing" className="text-gray-300 transition-colors hover:text-purple-400">
                     Pricing
-                  </a>
-                  <a href="/documentation" className="text-gray-300 transition-colors hover:text-purple-400">
+                  </Link>
+                  <Link href="/documentation" className="text-gray-300 transition-colors hover:text-purple-400">
                     Documentation
-                  </a>
-                  <a href="/public-reports" className="text-gray-300 transition-colors hover:text-purple-400">
+                  </Link>
+                  <Link href="/public-reports" className="text-gray-300 transition-colors hover:text-purple-400">
                     Public reports
-                  </a>
-                  <a href="/press" className="text-gray-300 transition-colors hover:text-purple-400">
+                  </Link>
+                  <Link href="/press" className="text-gray-300 transition-colors hover:text-purple-400">
                     Press
-                  </a>
+                  </Link>
                 </div>
                 <div className="flex items-center gap-3">
-                  <a href="/login">
+                  <Link href="/login">
                     <button
                       data-slot="button"
                       className="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:hover:bg-accent/50 inline-flex h-9 shrink-0 items-center justify-center gap-2 rounded-md px-4 py-2 text-sm font-medium whitespace-nowrap text-gray-300 transition-all outline-none hover:bg-purple-500/10 hover:text-purple-400 focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 has-[>svg]:px-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4"
                     >
                       Sign In
                     </button>
-                  </a>
-                  <a href="/register">
+                  </Link>
+                  <Link href="/register">
                     <button
                       data-slot="button"
                       className="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-primary/90 inline-flex h-9 shrink-0 items-center justify-center gap-2 rounded-md bg-gradient-to-r from-purple-600 to-blue-600 px-4 py-2 text-sm font-medium whitespace-nowrap text-white transition-all outline-none hover:from-purple-700 hover:to-blue-700 focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 has-[>svg]:px-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4"
                     >
                       Start Free
                     </button>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -72,7 +73,7 @@ const HomePage = () => {
               <div className="mb-12 flex translate-y-0 flex-wrap justify-center gap-8 opacity-100 transition-all delay-200 duration-1000">
                 <div className="group flex cursor-pointer flex-col items-center">
                   <div className="relative">
-                    <img
+                    <Image
                       src="https://spyderbot.net/build/assets/openai-BATt8aU5.svg"
                       alt="OpenAI"
                       className="mb-1 h-10 w-10 transition-all duration-300 group-hover:scale-125 group-hover:rotate-12 group-hover:drop-shadow-[0_0_15px_rgba(139,92,246,0.6)]"
@@ -86,7 +87,7 @@ const HomePage = () => {
                 </div>
                 <div className="group flex cursor-pointer flex-col items-center">
                   <div className="relative">
-                    <img
+                    <Image
                       src="https://spyderbot.net/build/assets/grok-CmsYpdpO.svg"
                       alt="Grok"
                       className="mb-1 h-10 w-10 transition-all duration-300 group-hover:scale-125 group-hover:rotate-12 group-hover:drop-shadow-[0_0_15px_rgba(139,92,246,0.6)]"
@@ -100,7 +101,7 @@ const HomePage = () => {
                 </div>
                 <div className="group flex cursor-pointer flex-col items-center">
                   <div className="relative">
-                    <img
+                    <Image
                       src="https://spyderbot.net/build/assets/gemini-Bclm3yrv.svg"
                       alt="Gemini"
                       className="mb-1 h-10 w-10 transition-all duration-300 group-hover:scale-125 group-hover:rotate-12 group-hover:drop-shadow-[0_0_15px_rgba(59,130,246,0.6)]"
@@ -113,7 +114,7 @@ const HomePage = () => {
                 </div>
                 <div className="group flex cursor-pointer flex-col items-center">
                   <div className="relative">
-                    <img
+                    <Image
                       src="https://spyderbot.net/build/assets/copilot-CMCQCbOH.svg"
                       alt="Copilot"
                       className="mb-1 h-10 w-10 transition-all duration-300 group-hover:scale-125 group-hover:rotate-12 group-hover:drop-shadow-[0_0_15px_rgba(6,182,212,0.6)]"
@@ -126,7 +127,7 @@ const HomePage = () => {
                 </div>
                 <div className="group flex cursor-pointer flex-col items-center">
                   <div className="relative">
-                    <img
+                    <Image
                       src="https://spyderbot.net/build/assets/perplexity-DHV5tWQK.svg"
                       alt="Perplexity"
                       className="mb-1 h-10 w-10 transition-all duration-300 group-hover:scale-125 group-hover:rotate-12 group-hover:drop-shadow-[0_0_15px_rgba(16,185,129,0.6)]"
@@ -139,7 +140,7 @@ const HomePage = () => {
                 </div>
                 <div className="group flex cursor-pointer flex-col items-center">
                   <div className="relative">
-                    <img
+                    <Image
                       src="https://spyderbot.net/build/assets/meta-BbZH1I25.svg"
                       alt="Llama"
                       className="mb-1 h-10 w-10 transition-all duration-300 group-hover:scale-125 group-hover:rotate-12 group-hover:drop-shadow-[0_0_15px_rgba(59,130,246,0.6)]"
@@ -156,7 +157,7 @@ const HomePage = () => {
                 </div>
                 <div className="group flex cursor-pointer flex-col items-center">
                   <div className="relative">
-                    <img
+                    <Image
                       src="https://spyderbot.net/build/assets/claude-CSugY8Hj.svg"
                       alt="Claude"
                       className="mb-1 h-10 w-10 transition-all duration-300 group-hover:scale-125 group-hover:rotate-12 group-hover:drop-shadow-[0_0_15px_rgba(236,72,153,0.6)]"
@@ -251,66 +252,66 @@ const HomePage = () => {
                   className="flex h-16 translate-y-0 items-center rounded-lg border border-white/10 px-6 opacity-100 shadow-lg shadow-purple-500/10 transition-all duration-300 hover:scale-110 hover:border-purple-500/40 hover:shadow-purple-500/20"
                   style={{ backgroundColor: 'rgb(255, 255, 255)', width: 170, transitionDelay: '0ms' }}
                 >
-                  <a href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer">
-                    <img
+                  <Link href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer">
+                    <Image
                       src="https://spyderbot.net/build/assets/mongodb-DlgkxVGV.svg"
                       alt="MongoDB"
                       className="h-auto w-full brightness-200 contrast-125 filter"
                       style={{ width: 170 }}
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div
                   className="flex h-16 translate-y-0 items-center rounded-lg border border-white/10 px-6 opacity-100 shadow-lg shadow-purple-500/10 transition-all duration-300 hover:scale-110 hover:border-purple-500/40 hover:shadow-purple-500/20"
                   style={{ backgroundColor: 'rgb(255, 255, 255)', width: 170, transitionDelay: '100ms' }}
                 >
-                  <a href="https://www.docusign.com/" target="_blank" rel="noopener noreferrer">
-                    <img
+                  <Link href="https://www.docusign.com/" target="_blank" rel="noopener noreferrer">
+                    <Image
                       src="https://spyderbot.net/build/assets/docusign-B26QobHe.svg"
                       alt="Docusign"
                       className="h-auto w-full brightness-200 contrast-125 filter"
                       style={{ width: 170 }}
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div
                   className="flex h-16 translate-y-0 items-center rounded-lg border border-white/10 px-6 opacity-100 shadow-lg shadow-purple-500/10 transition-all duration-300 hover:scale-110 hover:border-purple-500/40 hover:shadow-purple-500/20"
                   style={{ backgroundColor: 'rgb(255, 255, 255)', width: 170, transitionDelay: '200ms' }}
                 >
-                  <a href="https://www.opera.com/" target="_blank" rel="noopener noreferrer">
-                    <img
+                  <Link href="https://www.opera.com/" target="_blank" rel="noopener noreferrer">
+                    <Image
                       src="https://spyderbot.net/build/assets/opera-54CDNIB8.svg"
                       alt="Opera"
                       className="h-auto w-full brightness-200 contrast-125 filter"
                       style={{ width: 170 }}
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div
                   className="flex h-16 translate-y-0 items-center rounded-lg border border-white/10 px-6 opacity-100 shadow-lg shadow-purple-500/10 transition-all duration-300 hover:scale-110 hover:border-purple-500/40 hover:shadow-purple-500/20"
                   style={{ backgroundColor: 'rgb(255, 255, 255)', width: 170, transitionDelay: '300ms' }}
                 >
-                  <a href="https://www.auto1.com/" target="_blank" rel="noopener noreferrer">
-                    <img
+                  <Link href="https://www.auto1.com/" target="_blank" rel="noopener noreferrer">
+                    <Image
                       src="https://spyderbot.net/build/assets/auto1-Ca3_MFxp.svg"
                       alt="Auto1"
                       className="h-auto w-full brightness-200 contrast-125 filter"
                       style={{ width: 170 }}
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div
                   className="flex h-16 translate-y-0 items-center rounded-lg border border-white/10 px-6 opacity-100 shadow-lg shadow-purple-500/10 transition-all duration-300 hover:scale-110 hover:border-purple-500/40 hover:shadow-purple-500/20"
                   style={{ backgroundColor: 'rgb(255, 255, 255)', width: 170, transitionDelay: '400ms' }}
                 >
-                  <a href="https://www.workable.com/" target="_blank" rel="noopener noreferrer">
-                    <img
+                  <Link href="https://www.workable.com/" target="_blank" rel="noopener noreferrer">
+                    <Image
                       src="https://spyderbot.net/build/assets/workable-GCaB0P10.png"
                       alt="Workable"
                       className="h-auto w-full brightness-200 contrast-125 filter"
                       style={{ width: 170 }}
                     />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -368,11 +369,11 @@ const HomePage = () => {
                     Imagine dominating AI searches where LLMs like ChatGPT and Gemini drive 70% of queries, unlocking
                     billions in untapped opportunities. SpyderBot delivers real-time insights to reveal:{' '}
                     <span className="font-semibold text-white">
-                      "What do LLMs mention about your brand or competitors?"
+                      &#34;What do LLMs mention about your brand or competitors?&#34;
                     </span>{' '}
                     with precise sentiment and ranking analysis, and{' '}
                     <span className="font-semibold text-white">
-                      "How are the LLMs analyzing and tracking your website?"
+                      &#34;How are the LLMs analyzing and tracking your website?&#34;
                     </span>{' '}
                     through advanced crawler monitoring. Boost your generative engine optimization (GEO) for 20-30% more
                     traffic and smarter decisions.
@@ -666,7 +667,7 @@ const HomePage = () => {
                   style={{ transitionDelay: '0ms' }}
                 >
                   <div className="glass-light relative h-48 overflow-hidden border-b border-purple-500/20">
-                    <img
+                    <Image
                       src="https://spyderbot.net/storage/report_thumbs/99.png"
                       alt="hoaphat.com.vn"
                       className="h-full w-full object-cover"
@@ -718,7 +719,7 @@ const HomePage = () => {
                   style={{ transitionDelay: '100ms' }}
                 >
                   <div className="glass-light relative h-48 overflow-hidden border-b border-purple-500/20">
-                    <img
+                    <Image
                       src="https://spyderbot.net/storage/report_thumbs/98.png"
                       alt="microsoft.com"
                       className="h-full w-full object-cover"
@@ -770,7 +771,7 @@ const HomePage = () => {
                   style={{ transitionDelay: '200ms' }}
                 >
                   <div className="glass-light relative h-48 overflow-hidden border-b border-purple-500/20">
-                    <img
+                    <Image
                       src="https://spyderbot.net/storage/report_thumbs/97.png"
                       alt="citigroup.com"
                       className="h-full w-full object-cover"
@@ -822,7 +823,7 @@ const HomePage = () => {
                   style={{ transitionDelay: '300ms' }}
                 >
                   <div className="glass-light relative h-48 overflow-hidden border-b border-purple-500/20">
-                    <img
+                    <Image
                       src="https://spyderbot.net/storage/report_thumbs/96.png"
                       alt="udemy.com"
                       className="h-full w-full object-cover"
@@ -874,7 +875,7 @@ const HomePage = () => {
                   style={{ transitionDelay: '400ms' }}
                 >
                   <div className="glass-light relative h-48 overflow-hidden border-b border-purple-500/20">
-                    <img
+                    <Image
                       src="https://spyderbot.net/storage/report_thumbs/95.png"
                       alt="hcahealthcare.com"
                       className="h-full w-full object-cover"
@@ -926,7 +927,7 @@ const HomePage = () => {
                   style={{ transitionDelay: '500ms' }}
                 >
                   <div className="glass-light relative h-48 overflow-hidden border-b border-purple-500/20">
-                    <img
+                    <Image
                       src="https://spyderbot.net/storage/report_thumbs/94.png"
                       alt="macys.com"
                       className="h-full w-full object-cover"
@@ -1029,7 +1030,7 @@ const HomePage = () => {
             <div className="mx-auto max-w-6xl">
               <div className="mb-12 grid gap-12 md:grid-cols-4">
                 <div className="md:col-span-1">
-                  <img
+                  <Image
                     src="https://spyderbot.net/build/assets/spiderbot-i2zJVPML.png"
                     alt="SpyderBot"
                     className="mb-4 h-10"
@@ -1042,33 +1043,33 @@ const HomePage = () => {
                   </p>
                   <p className="text-sm text-gray-400">
                     Contact:{' '}
-                    <a href="mailto:contact@spyderbot.net" className="underline hover:text-purple-400">
+                    <Link href="mailto:contact@spyderbot.net" className="underline hover:text-purple-400">
                       contact@spyderbot.net
-                    </a>
+                    </Link>
                   </p>
                 </div>
                 <div>
                   <h4 className="mb-4 text-white">Product</h4>
                   <ul className="space-y-3">
                     <li>
-                      <a href="/features" className="transition-colors hover:text-purple-400">
+                      <Link href="/features" className="transition-colors hover:text-purple-400">
                         Features
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#integrations" className="transition-colors hover:text-purple-400">
+                      <Link href="#integrations" className="transition-colors hover:text-purple-400">
                         Integrations
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/pricing" className="transition-colors hover:text-purple-400">
+                      <Link href="/pricing" className="transition-colors hover:text-purple-400">
                         Pricing
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/documentation" className="transition-colors hover:text-purple-400">
+                      <Link href="/documentation" className="transition-colors hover:text-purple-400">
                         Documentation
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -1076,19 +1077,19 @@ const HomePage = () => {
                   <h4 className="mb-4 text-white">Company</h4>
                   <ul className="space-y-3">
                     <li>
-                      <a href="#about" className="transition-colors hover:text-purple-400">
+                      <Link href="#about" className="transition-colors hover:text-purple-400">
                         About Us
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/public-reports" className="transition-colors hover:text-purple-400">
+                      <Link href="/public-reports" className="transition-colors hover:text-purple-400">
                         GEO Reports
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/press" className="transition-colors hover:text-purple-400">
+                      <Link href="/press" className="transition-colors hover:text-purple-400">
                         Press
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -1096,24 +1097,24 @@ const HomePage = () => {
                   <h4 className="mb-4 text-white">Resources</h4>
                   <ul className="space-y-3">
                     <li>
-                      <a href="#community" className="transition-colors hover:text-purple-400">
+                      <Link href="#community" className="transition-colors hover:text-purple-400">
                         Community
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#contact" className="transition-colors hover:text-purple-400">
+                      <Link href="#contact" className="transition-colors hover:text-purple-400">
                         Contact
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#support" className="transition-colors hover:text-purple-400">
+                      <Link href="#support" className="transition-colors hover:text-purple-400">
                         Support
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#status" className="transition-colors hover:text-purple-400">
+                      <Link href="#status" className="transition-colors hover:text-purple-400">
                         Status
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -1122,13 +1123,13 @@ const HomePage = () => {
                 <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
                   <p className="text-sm text-gray-400">© 2025 SpyderBot. All rights reserved.</p>
                   <div className="flex gap-6">
-                    <a href="/privacy-policy" className="text-sm transition-colors hover:text-purple-400">
+                    <Link href="/privacy-policy" className="text-sm transition-colors hover:text-purple-400">
                       Privacy Policy
-                    </a>
+                    </Link>
                     <span className="text-gray-600">|</span>
-                    <a href="/terms-and-conditions" className="text-sm transition-colors hover:text-purple-400">
+                    <Link href="/terms-and-conditions" className="text-sm transition-colors hover:text-purple-400">
                       Terms of Use
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

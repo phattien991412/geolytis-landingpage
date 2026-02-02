@@ -255,9 +255,11 @@ html.lenis.lenis-stopped {
 }
 
 .glass {
-  -webkit-backdrop-filter: blur(20px)saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
   background: #1a1f3a66;
   border: 1px solid #8b5cf633;
-  transition: all .3s cubic-bezier(.4, 0, .2, 1);
-  box-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -1px #0000000f,
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow:
+    0 4px 6px -1px #0000001a,
+    0 2px 4px -1px #0000000f;
 }
