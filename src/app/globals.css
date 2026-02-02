@@ -119,7 +119,7 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-white;
   }
 }
 
@@ -252,4 +252,12 @@ html.lenis.lenis-stopped {
 
 .blur-img.loaded img {
   opacity: 1;
+}
+
+.glass {
+  -webkit-backdrop-filter: blur(20px)saturate(180%);
+  background: #1a1f3a66;
+  border: 1px solid #8b5cf633;
+  transition: all .3s cubic-bezier(.4, 0, .2, 1);
+  box-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -1px #0000000f,
 }
